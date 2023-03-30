@@ -4,8 +4,15 @@ import About from '@/components/About'
 import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
 import Contact from '@/components/Contact'
-
+import {firestore} from '../firebase/config'
 export default function Home() {
+  const postData = async data =>{
+    const time = Date.now()
+    await firestore.collection('info').add({
+      ...data, postedOn: new Intl.DateTimeFormat('en-US', {year: 'numeric', month: 'long', day: '2-digit', hour:'2-digit', minute: '2-digit'}).format(time),
+
+    })
+  }
   return (
     <>
       <Head>
@@ -18,7 +25,7 @@ export default function Home() {
       <About/>
       <Skills/>
       <Projects/>
-      <Contact/>
+      <Contact postData={postData}/>
     </>
     )
   }
