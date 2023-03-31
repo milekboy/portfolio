@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import logo from '../public/assets/logo.png'
 import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} 
 from 'react-icons/ai'
 import {FaGithub, FaLinkedinIn, FaTwitter} from 'react-icons/fa'
@@ -58,7 +59,7 @@ const Navbar = () => {
         <div style={{backgroundColor: `${navBg} `}} className={shadow?  ' fixed w-full h-20 shadow-xl z-[100]': 'dark:bg-[#383737] fixed w-full h-20 z-[100]'}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 z-[100] dark:bg-[#383737]'>
                 <Link href='/'>
-                <Image src='/../public/assets/logo.png' alt='/' width='80' height='50' />
+                <Image src={logo} alt='/' width='80' height='50' />
                 </Link>
                 <div>
                     <ul style={{ color: `${linkColor}`}} className='hidden md:flex'>
@@ -108,7 +109,7 @@ const Navbar = () => {
                     <div className='flex w-full items-center justify-between'>
                         <div >
                             <Link href='/'>
-                        <Image src='/../public/assets/logo.png' alt='/' width='87' height='35' />
+                        <Image src={logo} alt='/' width='87' height='35' />
                         </Link>
                         </div>
                         <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer dark:text-white'>
