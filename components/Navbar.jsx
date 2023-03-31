@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '../public/assets/logo.png'
 import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} 
 from 'react-icons/ai'
 import {FaGithub, FaLinkedinIn, FaTwitter} from 'react-icons/fa'
@@ -32,33 +31,21 @@ const Navbar = () => {
           setLinkcolor('#ecf0f3')
       } 
       else if( 
-        theme === 'dark' ||
-        theme === 'dark' &&  
-        router.asPath === '/' ||
-        theme === 'dark' &&  router.asPath === '/#about' ||
-        theme === 'dark' &&  router.asPath === '/#skills' ||
-        theme === 'dark' &&   router.asPath === '/#projects' ||
-        theme === 'dark' &&    router.asPath === '/#contact'
+        theme === 'dark' 
+      
       ){
         setNavBg('#383737')
         setLinkcolor('#ecf0f3')
       } 
       else if( 
-        theme === 'light' ||
-        theme === 'light' &&  
-        router.asPath === '/' ||
-        theme === 'light' &&  router.asPath === '/#about' ||
-        theme === 'light' &&   router.asPath === '/#skills' ||
-        theme === 'light' &&  router.asPath === '/#projects' ||
-        theme === 'light' &&  router.asPath === '/#contact'
+        theme === 'light' 
+      
       ){
         setNavBg('#ecf0f3')
         setLinkcolor('#1f2937')
-      }else {
-          setNavBg('#ecf0f3')
-          setLinkcolor('#1f2937')
       }
-  },[router])
+   
+  },[router, theme])
   
   useEffect(()=>{
     const handleShadow =()=>{
