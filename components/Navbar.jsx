@@ -7,7 +7,7 @@ import {FaGithub, FaLinkedinIn, FaTwitter} from 'react-icons/fa'
 import { useRouter } from 'next/router'
 import { useTheme } from 'next-themes';
 const Navbar = () => {
-   const { systemTheme, theme, setTheme } = useTheme();
+   const {  theme, setTheme } = useTheme('light');
   const [mounted, setMounted] = useState(false);
   const [navBg, setNavBg]=useState('#ecf0f3 dark-#383737')
   const [linkColor, setLinkcolor]= useState('#1f2937')
