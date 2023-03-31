@@ -3,8 +3,7 @@ import React, {useState} from 'react'
 import contact from '../public/assets/contact.jpg'
 import Image from 'next/image'
 import { AiOutlineMail } from 'react-icons/ai'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 import Link from 'next/link'
 
@@ -50,18 +49,26 @@ const Contact = (props) => {
                     <div>
                         <p className='uppercase pt-8'>Connect With Me </p>
                         <div className='flex items-center justify-between py-4'>
-                        <div className='rounded-full shadow-gray-400 shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                        <a href='https://www.linkedin.com/in/wahab-tijani-b0167324b/'>
+                        <div className='rounded-full shadow-gray-400 shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-[#ecf0f3]'>
                     <FaLinkedinIn/>
                 </div>
-                <div className='rounded-full shadow-gray-400 shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                </a>
+                <a href='https://github.com/milekboy'>
+                <div className='rounded-full shadow-gray-400 shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-[#ecf0f3]'>
                     <FaGithub/>
                 </div>
-                <div className='rounded-full shadow-gray-400 shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                </a>
+                <a href=''>
+                <div className='rounded-full shadow-gray-400 shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-[#ecf0f3]'>
                     <AiOutlineMail/>
                 </div>
-                <div className='rounded-full shadow-gray-400 shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <BsFillPersonLinesFill/>
+                </a>
+                <a href='https://twitter.com/milekdev'>
+                <div className='rounded-full shadow-gray-400 shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-[#ecf0f3]'>
+                    <FaTwitter/>
                 </div> 
+                </a>
                         </div>
                     </div>
                 </div>

@@ -22,24 +22,24 @@ const Main = () => {
                     I'm a self taught frontend web developer specializing in building exceptional digital experiences. Currently, I'm focused on building responsive front-end web applications while learning mobile app technologies.
                 </p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                <div className='rounded-full shadow-gray-400 shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <div className='rounded-full shadow-gray-400 shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-[#ecf0f3]'>
                    <a href='https://www.linkedin.com/in/wahab-tijani-b0167324b/'>
                    <FaLinkedinIn/>
                     </a> 
                 </div>
-                <div className='rounded-full shadow-gray-400 shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <div className='rounded-full shadow-gray-400 shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-[#ecf0f3]'>
                 <a href='https://github.com/milekboy'>
                 <FaGithub/>
                     </a> 
                    
                 </div>
-                <div className='rounded-full shadow-gray-400 shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <div className='rounded-full shadow-gray-400 shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-[#ecf0f3]'>
                 <a href=''>
                 <AiOutlineMail/>
                     </a> 
                    
                 </div>
-                <div className='rounded-full shadow-gray-400 shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <div className='rounded-full shadow-gray-400 shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-[#ecf0f3]'>
                 <a href='https://twitter.com/milekdev'>
                 <FaTwitter/>
                     </a> 
