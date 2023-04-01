@@ -3,11 +3,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} 
 from 'react-icons/ai'
-import {FaGithub, FaLinkedinIn, FaTwitter} from 'react-icons/fa'
+import {FaGithub, FaLinkedinIn, FaTwitter, FaMoon, FaSun} from 'react-icons/fa'
 import { useRouter } from 'next/router'
 import { useTheme } from 'next-themes';
 const Navbar = () => {
-   const {  theme, setTheme } = useTheme('light');
+   const { systemTheme, theme, setTheme } = useTheme('light');
   const [mounted, setMounted] = useState(false);
   const [navBg, setNavBg]=useState('#ecf0f3 dark-#383737')
   const [linkColor, setLinkcolor]= useState('#1f2937')
@@ -98,28 +98,20 @@ const Navbar = () => {
                         <Link href='/#contact'>
                             <li className='ml-10 text-sm uppercase hover:border-b'>Contact</li>
                         </Link>
-                        <li className='ml-10 text-sm uppercase hover:border-b'> 
                         {currentTheme === 'dark' ? (
-            <button
-            className="bg-gray-100 w-9 rounded-md border-green-400 border-2 p-2"
-              onClick={
+                        <li className='ml-10 text-bg uppercase hover:border-b' onClick={
                 setHandlers
-               }
-            >
-              {' '}
-              <Image src="/sun.svg" alt="logo" height="50" width="50" />
-            </button>
-          ) : (
-            <button
-              className="bg-gray-100 w-9 rounded-md border-green-400 border-2 p-2 "
-            
-              onClick={setHandler}
-            >
-              <Image src="/moon.svg" alt="logo" height="500" width="30" />
-            </button>
-          )}
+               }> 
+              <FaSun/> 
+              </li>
+             ) : (
+            <li className='ml-10 text-sm uppercase hover:border-b' onClick={
+                setHandler
+               }> 
+              <FaMoon/>
           </li>
-                    </ul>
+          )}
+          </ul>
                     <div className='md:hidden cursor-pointer dark:text-white'>
                          <AiOutlineMenu onClick={handleNav} size={25}/>
                     </div>
@@ -157,27 +149,21 @@ const Navbar = () => {
                         <Link href='/#contact'>
                         <li onClick={()=> setNav(false)} className='py-4 text-sm'>Contact </li>
                         </Link>
-                        <li className='py-4 text-sm'> 
                         {currentTheme === 'dark' ? (
-            <button
-            className="bg-gray-100 w-9 rounded-md border-green-400 border-2 p-2"
-              onClick={setHandlers}
-            >
-              {' '}
-              <Image src="/sun.svg" alt="logo" height="50" width="50" />
-            </button>
-          ) : (
-            <button
-              className="bg-gray-100 w-9 rounded-md border-green-400 border-2 p-2 "
-            
-              onClick={setHandler}
-            >
-              <Image src="/moon.svg" alt="logo" height="500" width="30" />
-            </button>
-          )}
+                        <li className='py-4 text-xl' onClick={
+                setHandlers
+               }> 
+              <FaSun/>
+              </li>
+             ) : (
+            <li className='py-4 text-xl' onClick={
+                setHandler
+               }> 
+              <FaMoon/>
           </li>
+          )}
                     </ul>
-                    <div className='pt-2'>
+                    <div className='pt-16'>
                     <p className='uppercase tracking-widest text-[#5651e5]'>Let's Connect</p>
                     <div className='flex item-center justify-between my-4 w-full sm:w-[80%]'>
                         <div className='rounded-full shadow-gray-400 shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300 dark:text-[#ecf0f3]'>
