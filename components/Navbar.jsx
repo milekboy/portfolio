@@ -7,7 +7,7 @@ import {FaGithub, FaLinkedinIn, FaTwitter, FaMoon, FaSun} from 'react-icons/fa'
 import { useRouter } from 'next/router'
 import { useTheme } from 'next-themes';
 const Navbar = () => {
-   const { systemTheme, theme, setTheme } = useTheme('light');
+   const {  theme, setTheme } = useTheme('light');
   const [mounted, setMounted] = useState(false);
   const [navBg, setNavBg]=useState('#ecf0f3 dark-#383737')
   const [linkColor, setLinkcolor]= useState('#1f2937')
@@ -59,7 +59,7 @@ const Navbar = () => {
   }, [])
 
   if (!mounted) return null;
-  const currentTheme = theme === 'system' ? systemTheme : theme;
+  const currentTheme = theme;
 
 
     const handleNav = () => {
