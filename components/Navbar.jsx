@@ -9,8 +9,8 @@ import { useTheme } from 'next-themes';
 const Navbar = () => {
    const {  theme, setTheme } = useTheme('light');
   const [mounted, setMounted] = useState(false);
-  const [navBg, setNavBg]=useState('#ecf0f3 dark-#383737')
-  const [linkColor, setLinkcolor]= useState('#1f2937')
+  const [navBg, setNavBg]=useState('#383737')
+  const [linkColor, setLinkcolor]= useState('')
   const[nav, setNav]= useState(false);
   const [shadow, setShadow ]= useState(false);
 
