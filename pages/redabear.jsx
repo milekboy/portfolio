@@ -19,8 +19,9 @@ const redabear = () => {
         <p>Project </p>
         <h2>Overview</h2>
         <p>
-          This app was built using React js.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus mollitia nam vero hic, explicabo debitis fugit quidem dignissimos itaque tenetur fuga assumenda atque aspernatur recusandae alias similique accusamus aut quaerat.
+          This website was built using HTML, CSS and JavaScript.
+          It is my first ever project as a web developer after learning HTML, CSS and Bootstrap. It has a nice layout and nice animation.
+         
         </p>
         <a href='https://redabearmilek.netlify.app'>
         <button className='px-8 py-2 mt-4 mr-8'>Demo</button>

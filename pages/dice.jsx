@@ -20,7 +20,8 @@ const dice = () => {
         <h2>Overview</h2>
         <p>
           This app was built using React js.
-          It is a virtual Dice game where two players are able to compete to determine a winner by rolling the dice. 
+          It is a virtual Dice game where two players are able to compete against each other. The winner is the first player to cross ten points.
+          It has a captivating and understandable  user interface.
           It also has a backgroud music feature which can be turned on and off based on the player's preference.
         </p>
         <a href='https://milek-dice-game.netlify.app/'><button className='px-8 py-2 mt-4 mr-8'>Demo</button></a>
@@ -38,6 +39,9 @@ const dice = () => {
               </p>
               <p className='text-gray-600 py-2 flex items-center '>
                 <RiRadioButtonFill className='pr-1'/> Bootstrap
+              </p>
+              <p className='text-gray-600 py-2 flex items-center '>
+                <RiRadioButtonFill className='pr-1'/> React Howler
               </p>
             </div>
           </div>

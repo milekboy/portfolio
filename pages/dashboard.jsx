@@ -20,7 +20,7 @@ const dashboard = () => {
         <h2>Overview</h2>
         <p>
           This app was built using React js.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus mollitia nam vero hic, explicabo debitis fugit quidem dignissimos itaque tenetur fuga assumenda atque aspernatur recusandae alias similique accusamus aut quaerat.
+         It is a dashboard website styled with Vanilla CSS. Building this project sharpened my ability to build complex designs as a frontend developer.
         </p>
         <a href='https://my-sample-dashboard.netlify.app'>
         <button className='px-8 py-2 mt-4 mr-8'>Demo</button>

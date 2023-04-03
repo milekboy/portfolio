@@ -1,6 +1,6 @@
 import React from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
-import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaTwitter,  } from 'react-icons/fa'
 import Typewriter from 'typewriter-effect';
 
 const Main = () => {

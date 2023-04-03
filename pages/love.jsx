@@ -20,7 +20,8 @@ const love = () => {
         <h2>Overview</h2>
         <p>
           This app was built using React js.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus mollitia nam vero hic, explicabo debitis fugit quidem dignissimos itaque tenetur fuga assumenda atque aspernatur recusandae alias similique accusamus aut quaerat.
+          It is a web app that calculates the amount of love between two Individuals. It has been used by hundreds of users, and has been said to have  80% result accuracy.
+          You should try this one out😊.
         </p>
         <a href='https://milek-love-calc.netlify.app'>
         <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
