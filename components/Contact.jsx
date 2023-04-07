@@ -86,14 +86,14 @@ const Contact = (props) => {
                                 <input 
                                 name='name'
                                 value={data.name} 
-                                onChange={handleChange}  className='border-2 rounded-lg p-3 flex border-gray-300' type='text'/>
+                                onChange={handleChange}  className='border-2 rounded-lg p-3 flex border-gray-300' type='text'  required/>
                             </div>
                             <div className='flex flex-col'>
                                 <label className='uppercase text-sm py-2'>Phone Number</label>
                                 <input 
                                 name='phone'
                                 value={data.phone} 
-                                onChange={handleChange}         className='border-2 rounded-lg p-3 flex border-gray-300' type='text'/>
+                                onChange={handleChange}         className='border-2 rounded-lg p-3 flex border-gray-300' type='text' required/>
                             </div>
                         </div>
                         <div className='flex flex-col py-2'>
@@ -101,10 +101,10 @@ const Contact = (props) => {
                         <input 
                         name='email'
                         value={data.email} 
-                                 onChange={handleChange} className='border-2 rounded-lg p-3 flex border-gray-300' type='email'/>
+                                 onChange={handleChange} className='border-2 rounded-lg p-3 flex border-gray-300' type='email' required/>
                         </div>
                         <div className='flex flex-col py-2'>
-                        <label className='uppercase text-sm py-2'>Subject</label>
+                        <label className='uppercase text-sm py-2' required>Subject</label>
                         <input 
                         name='subject'
                         value={data.subject} 
